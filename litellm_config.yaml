@@ -1,0 +1,9 @@
+model_list:
+  - model_name: databricks-gpt-5-1  # alias you'll use when calling the API
+    litellm_params:
+      model: databricks/databricks-gpt-5-1
+      api_base: os.environ/DATABRICKS_API_BASE  # set this to full URL including /serving-endpoints
+      api_key: os.environ/DATABRICKS_TOKEN
+
+litellm_settings:
+  master_key: sk-1234  # change this to a secure key for production
